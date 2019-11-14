@@ -1,37 +1,42 @@
 html {
   font-family: Overpass, sans-serif;
-
+  background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
   color: #fff;
 }
 
-section {
-  background-image: linear-gradient(to top, #ff5e3a,#ff9500);
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
-li:first-child,
-li:nth-child(2) {
-  border-left: none;
-  border-box: 2px solid rgba(255, 255, .5):
-  }
-
-.btn-ghost {
-  text-decoration: none;
-  border: 2px solid #fff;
-  border-radius: 6px;
-  padding: .5em;
-  color: #fff;
-
-
+.btn {
+  border-color: #fff;
 }
 
-.btn:hover {
+.btn:hover  {
   background-color: #fff;
   border-color: #fff;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn:hover a {
+  color: #ff9500;
+}
+
+.card-border {
+  border: 3px solid #ff9500;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
 @media only screen and (min-width: 60em) {
-  li:first-child
-  li:nth-child(2) {
-border-right: 2px solid rgba(255, 255 255, .5);
+
+  .card-border {
+    border-bottom: 0;
   }
+
 }
