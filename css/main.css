@@ -4,15 +4,11 @@ html {
   color: #fff;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
 .btn {
-  border-color: #fff;
+  border-color: rgba(255, 255, 255, 1);
 }
 
-.btn:hover  {
+.btn:hover {
   background-color: #fff;
   border-color: #fff;
 }
